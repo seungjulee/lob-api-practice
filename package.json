@@ -1,0 +1,59 @@
+{
+  "name": "lob-api-practice",
+  "version": "1.0.0",
+  "description": "Send a letter to your local house representatives using Lob API.",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --recursive",
+    "test:watch": "npm run test -- --watch",
+    "build": "NODE_ENV=production webpack --progress --colors",
+    "dev": "webpack-dev-server --history-api-fallback --display-error-detail --hot --inline --progress --colors --port 3000",
+    "start": "node server.js",
+    "lint": "./node_modules/eslint/bin/eslint.js client server"
+  },
+  "keywords": [
+    "lob"
+  ],
+  "author": "SeungJu Lee",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.3.26",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-runtime": "^6.3.13",
+    "babel-polyfill": "^6.5.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "chai": "^3.5.0",
+    "eslint-config-standard": "^5.1.0",
+    "file-loader": "^0.8.5",
+    "koa": "^1.1.2",
+    "koa-bodyparser": "^2.0.1",
+    "koa-compress": "^1.0.9",
+    "koa-cors": "0.0.16",
+    "koa-logger": "^1.3.0",
+    "koa-ratelimit": "^2.1.0",
+    "koa-request": "^1.0.0",
+    "koa-response-time": "^1.0.2",
+    "koa-route": "^2.4.2",
+    "koa-router": "^5.4.0",
+    "koa-static": "^2.0.0",
+    "lob": "^3.8.0",
+    "mocha": "^2.4.5",
+    "standard": "^6.0.7",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0",
+    "webpack-hot-middleware": "^2.2.0"
+  },
+  "dependencies": {
+    "formsy-material-ui": "^0.3.8",
+    "formsy-react": "^0.17.0",
+    "isomorphic-fetch": "^2.2.1",
+    "material-ui": "^0.14.4",
+    "query-string": "^3.0.0",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-router": "^2.0.0-rc5",
+    "react-tap-event-plugin": "^0.2.2"
+  }
+}

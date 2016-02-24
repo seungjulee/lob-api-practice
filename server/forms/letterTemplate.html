@@ -1,0 +1,132 @@
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<title>Letter to {{title}} {{name}}</title>
+<!-- Webfont doesn't work
+<script>
+  var WebFontConfig = {
+    google: { families: [ 'Roboto:400,300,500:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script> -->
+<style>
+  *, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  body {
+    /* Webfont doesn't work
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    */
+    width: 8.5in;
+    height: 11in;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page {
+    page-break-after: always;
+  }
+
+  .page-content {
+    position: relative;
+    width: 8.125in;
+    height: 10.625in;
+    left: 0.1875in;
+    top: 0.1875in;
+    background-color: white;
+  }
+
+  .text {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    width: 7.75in;
+    font-family: sans-serif;
+    font-size: 30px;
+  }
+
+  #return-address-window {
+    position: absolute;
+    left: .625in;
+    top: .5in;
+    width: 3.25in;
+    height: .875in;
+    background-color: white;
+  }
+
+  #return-address-text {
+    position: absolute;
+    left: .07in;
+    top: .34in;
+    width: 2.05in;
+    height: .44in;
+    background-color: white;
+    font-size: .11in;
+  }
+
+  #return-logo {
+    position: absolute;
+    left: .07in;
+    top: .02in;
+    width: 2.05in;
+    height: .3in;
+    background-color: white;
+  }
+
+  #recipient-address-window {
+    position: absolute;
+    left: .625in;
+    top: 1.75in;
+    width: 4in;
+    height: 1in;
+    background-color: white;
+  }
+
+  #recipient-address-text {
+    position: absolute;
+    left: .07in;
+    top: .05in;
+    width: 2.92in;
+    height: .9in;
+    background-color: white;
+  }
+
+</style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="page-content">
+      <div class="text" style="top: 3in">
+        Dear {{title}} {{name}},
+        <br><br>
+        {{msg}}
+        <br><br>
+        Sincerely,
+        <br>
+        {{from_name}}
+      </div>
+    </div>
+    <div id="return-address-window">
+      <div id="return-address-text">
+      </div>
+    </div>
+    <div id="recipient-address-window">
+      <div id="recipient-address-text">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
