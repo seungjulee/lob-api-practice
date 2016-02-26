@@ -38,6 +38,10 @@ module.exports = {
     new webpack.optimize.UglifyJsPlugin({
       mangle: {
         except: ['GeneratorFunction', 'GeneratorFunctionPrototype']
+      },
+      minimize: true,
+      compress: {
+        warnings: false
       }
     })
   ],
