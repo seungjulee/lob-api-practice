@@ -14,31 +14,31 @@ fetchLetterToLob.js to send a letter via Lob API.
 $ npm install
 ```
 
-2. Build the client-side application to static for production
+2. Add your Google Civic Api credential as 'google_key' and your Lob Api credential as 'lob_key' at './server/config/credential.json'
+
+## Development
+
+```sh
+$ npm run dev
+```
+Go to http://localhost:3000
+Client-side development with react-hot-transform
+
+## Production
+
+1. Build the client-side application to static for production
 ```sh
 $ npm run build
 ```
 
-3. Build the client-side application for production
+2. Build the client-side application for production
 ```sh
 $ npm run start
 ```
 
-4. Go to http://localhost:3000
-
-## Development
-
-Client-side development with react-hot-transform
-```sh
-$ npm run dev
-```
-
-Add your Google Civic Api credential as 'google_key' in './server/config/credential.json',
-and your Lob Api credential as 'lob_key' in './server/config/credential.json'.
+3. Go to http://localhost:3000
 
 ## Test
-
-Client-side development with react-hot-transform
 ```sh
 $ npm run test
 ```
@@ -53,13 +53,13 @@ $ npm run test
 
 + Running on Koa (Backend Server / API) and React (Frontend)
 
-+ Due to deprecation on some library of formsy-material-ui, it shows a warning sign
-for some react library. It does not interfere any functionality of the current build.
-However, should a problem arise, formsy-material-ui and formsy-react should be
-replaced with other compatible form library for extended uses.
 
 ## TODO
 
 + Add css
 
 + Allow more words on the lob letter
+
++ Change form to redux-form
+
++ Fix deprecation issue from the 'formsy-material-ui' library
