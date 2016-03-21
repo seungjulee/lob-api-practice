@@ -77,20 +77,20 @@ class App extends Component {
            validations='isWords'
            required
            hintText='What is your name?'
-           value='SeungJu Lee'
+           value='Donald Trump'
            floatingLabelText='Full Name'
          />
          <FormsyText
            name='line1'
            required
            hintText='Street Address'
-           value='745 Gough St'
+           value='725 Gough St'
            floatingLabelText='Street Address'
          />
          <FormsyText
            name='line2'
            hintText='APT / Suite Number'
-           value='Apt A'
+           value='Apt Q'
            floatingLabelText='APT / Suite Number'
          />
          <FormsyText
